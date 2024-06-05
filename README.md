@@ -1,4 +1,4 @@
-# WIP DESAFÍO COMPLEMENTARIO
+# (WIP) Desafío complementario
 
 ## Con base en el proyecto que venimos desarrollando, toca solidificar algunos procesos
 
