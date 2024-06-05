@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mt-5">Inicio de Sesión</h2>
+            {{#if messages.success}}
+            <div class="alert alert-success mt-2 text-center" role="alert" id="success-message">
+                {{messages.success}}
+                </div>
+            {{/if}}
+            {{#if messages.error}}
+                <div class="alert alert-danger mt-2 text-center" role="alert" id="error-message">
+                    {{messages.error}}
+                </div>
+            {{/if}}
+            <form action="/api/sessions/login" method="POST" class="card card-body bg-secondary mt-4">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión <i class="bi bi-server m-2"></i></i></button>
+                    <a href="/api/sessions/auth/github" class="btn btn-dark mt-2" style="background-color: #333; border-color: #333;">Iniciar Sesión <i class="bi bi-github m-2" role="img" aria-label="GitHub"></i>
+                    </a>
+                    <a href="/api/sessions/auth/google" class="btn btn-danger mt-2">Iniciar Sesión <i class="bi bi-google m-2" role="img" aria-label="Google"></i>
+                    </a>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a href="/register" class="text-light">¿No tienes una cuenta? Regístrate</a>
+            </div>
+            <div class="text-center mt-3">
+                <a href="/forgot-password" class="text-light">Restablecer contraseña</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/hideError.js"></script>
+<script src="/js/validate.js"></script>

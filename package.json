@@ -1,0 +1,47 @@
+{
+  "name": "proyecto_backend_coderhouse_jose_perez_merino",
+  "version": "1.0.0",
+  "description": "Pre-Entrega nro 3 Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "nodemon src/app.js --mode development",
+    "start": "node src/app.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "commander": "^12.0.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "faker": "^5.5.3",
+    "mongoose": "^8.1.1",
+    "mongoose-paginate-v2": "^1.8.0",
+    "mongoose-unique-validator": "^5.0.0",
+    "nodemailer": "^6.9.13",
+    "passport": "^0.7.0",
+    "passport-apple": "^2.0.2",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.7.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^7.0.0"
+  }
+}

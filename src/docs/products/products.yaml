@@ -1,0 +1,302 @@
+openapi: 3.0.1
+info:
+  title: Productos
+  description: Endpoints para la gestión de productos en el sistema de ecommerce
+  version: 1.0.0
+paths:
+  /api/products:
+    get:
+      summary: Obtiene todos los productos
+      tags: [Productos]
+      parameters:
+        - name: limit
+          in: query
+          description: Número de productos a devolver
+          required: false
+          schema:
+            type: integer
+        - name: page
+          in: query
+          description: Número de página
+          required: false
+          schema:
+            type: integer
+        - name: sort
+          in: query
+          description: Ordenar productos por precio (asc o desc)
+          required: false
+          schema:
+            type: string
+        - name: query
+          in: query
+          description: Filtro de búsqueda (por categoría o disponibilidad)
+          required: false
+          schema:
+            type: string
+      responses:
+        200:
+          description: Lista de productos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  products:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Product'
+                  totalPages:
+                    type: integer
+                  prevPage:
+                    type: integer
+                    nullable: true
+                  nextPage:
+                    type: integer
+                    nullable: true
+                  page:
+                    type: integer
+                  hasPrevPage:
+                    type: boolean
+                  hasNextPage:
+                    type: boolean
+                  prevLink:
+                    type: string
+                    nullable: true
+                  nextLink:
+                    type: string
+                    nullable: true
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      summary: Agrega un nuevo producto
+      tags: [Productos]
+      security:
+        - bearerAuth: []
+      requestBody:
+        description: Datos del nuevo producto
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                price:
+                  type: number
+                description:
+                  type: string
+                code:
+                  type: string
+                stock:
+                  type: integer
+                category:
+                  type: string
+              required:
+                - title
+                - price
+                - description
+                - code
+                - stock
+                - category
+      responses:
+        201:
+          description: Producto agregado correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  message:
+                    type: string
+                    example: Producto agregado correctamente
+        400:
+          description: Campos faltantes o inválidos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        401:
+          description: No autorizado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        
+  /api/products/{pid}:
+    get:
+      summary: Obtiene un producto por ID
+      tags: [Productos]
+      parameters:
+        - name: pid
+          in: path
+          description: ID del producto
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        404:
+          description: Producto no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    put:
+      summary: Actualiza un producto existente
+      tags: [Productos]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: pid
+          in: path
+          description: ID del producto a actualizar
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Datos del producto a actualizar
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                price:
+                  type: number
+                description:
+                  type: string
+                code:
+                  type: string
+                stock:
+                  type: integer
+                category:
+                  type: string
+      responses:
+        200:
+          description: Producto actualizado correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Producto actualizado correctamente
+                  product:
+                    $ref: '#/components/schemas/Product'
+        404:
+          description: Producto no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        400:
+          description: Campos inválidos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    delete:
+      summary: Elimina un producto
+      tags: [Productos]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: pid
+          in: path
+          description: ID del producto a eliminar
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto eliminado correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Producto eliminado correctamente
+        404:
+          description: Producto no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        403:
+          description: No autorizado para eliminar el producto
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        price:
+          type: number
+        description:
+          type: string
+        code:
+          type: string
+        stock:
+          type: integer
+        category:
+          type: string
+        owner:
+          type: string
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+        statusCode:
+          type: integer

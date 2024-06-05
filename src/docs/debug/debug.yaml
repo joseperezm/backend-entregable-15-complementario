@@ -1,0 +1,27 @@
+openapi: 3.0.1
+info:
+  title: Debug
+  description: Endpoint para generar mensajes de log de diferentes niveles en el sistema de ecommerce
+  version: 1.0.0
+paths:
+  /loggerTest:
+    get:
+      summary: Genera mensajes de log de prueba
+      tags: [Debug]
+      responses:
+        200:
+          description: Logs de prueba generados
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Logs de prueba generados, revisa el sistema de logging.
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+        statusCode:
+          type: integer

@@ -1,0 +1,32 @@
+<h1 class="mt-4 mb-3 text-center">Detalles del Carrito {{cart._id}}</h1>
+
+<div>
+    {{#if cart.products.length}}
+        <div class="list-group m-2">
+            {{#each cart.products}}
+            <div class="list-group-item cartList">
+                <div class="product-info">
+                    <h2 class="h4">{{this.productId.title}}</h2>
+                    <p>{{this.productId.description}}</p>
+                    <p>Cantidad: <span class="badge bg-secondary">{{this.quantity}}</span></p>
+                    <p>Precio: <span class="text-muted">${{this.productId.price}}</span></p>
+                    <p>Total: <span class="text-muted">$ {{multiply this.quantity this.productId.price}}</span></p>
+                </div>
+                <button class="delete-product-button btn btn-danger mt-2 mb-2" data-cart-id="{{../cart._id}}" data-product-id="{{this.productId._id}}"><i class="bi bi-trash"></i></button>
+            </div>
+            {{/each}}
+            <button class="delete-cart-button btn btn-danger mt-2 mb-2 w-100" data-cart-id="{{cart._id}}">Vaciar carrito</button>
+            <div class="bg-primary rounded text-center m-3 p-2">
+            <h3>Total del Carrito: ${{totalCart cart.products}}</h3>
+            </div>
+            <button class="purchase-button btn btn-success mt-2 mb-2 w-100" id="finalize-purchase" data-cart-id="{{cart._id}}">Finalizar Compra</button>
+        </div>
+    {{else}}
+    <hr>
+        <h5 class="text-center m-5">El carrito está vacío...</h5>
+    <hr>
+    {{/if}}
+</div>
+<script src="/js/finalizePurchase.js"></script>
+<script src="/js/deleteProduct.js"></script>
+<script src="/js/emptyCart.js"></script>

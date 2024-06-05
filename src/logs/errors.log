@@ -1,0 +1,81 @@
+2024-04-29T10:37:43.446Z - error: Mensaje de nivel error
+2024-04-29T10:37:43.448Z - fatal: Mensaje de nivel fatal
+2024-04-29T10:40:20.743Z - error: Mensaje de nivel error
+2024-04-29T10:40:20.744Z - fatal: Mensaje de nivel fatal
+2024-04-29T10:46:10.549Z - error: Mensaje de nivel error
+2024-04-29T10:46:10.549Z - fatal: Mensaje de nivel fatal
+2024-04-29T10:46:19.193Z - error: Mensaje de nivel error
+2024-04-29T10:46:19.193Z - fatal: Mensaje de nivel fatal
+2024-04-29T10:46:39.556Z - error: Mensaje de nivel error
+2024-04-29T10:46:39.556Z - fatal: Mensaje de nivel fatal
+2024-05-26T08:59:43.959Z - error: Error en el servidor - 500 - undefined - /api/products/nonexistentproductid1234567890 - IP: ::ffff:127.0.0.1
+2024-05-26T08:59:43.971Z - error: Error interno
+2024-05-26T08:59:44.746Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T08:59:44.749Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T08:59:45.493Z - error: Error en el servidor - 500 - undefined - /api/products/nonexistentproductid1234567890 - IP: ::ffff:127.0.0.1
+2024-05-26T08:59:45.495Z - error: Error interno
+2024-05-26T08:59:46.294Z - error: Error interno Cast to ObjectId failed for value "nonexistentproductid1234567890" (type string) at path "_id" for model "Product"
+2024-05-26T08:59:46.295Z - error: Error en el servidor - 500 - undefined - /api/products/nonexistentproductid1234567890 - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:16.125Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:16.565Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:17.312Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:17.314Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:04:17.719Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:18.121Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:18.522Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:04:18.921Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:07:32.037Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:07:32.817Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:07:32.820Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:07:33.639Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:07:34.503Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:17.497Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a97652 - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:17.931Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:18.684Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:18.686Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:10:19.091Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a97652 - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:19.494Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:19.894Z - error: Error en el servidor - 500 - undefined - /api/products/65c9ed04211074ca21a97652 - IP: ::ffff:127.0.0.1
+2024-05-26T09:10:20.295Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:11:38.644Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:11:39.435Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:11:39.437Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:11:40.247Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:11:41.106Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:13:45.818Z - error: Ocurrió un error inesperado.
+2024-05-26T09:14:41.838Z - error: Ocurrió un error inesperado.
+2024-05-26T09:19:27.526Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:19:28.291Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:19:28.293Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:19:29.088Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:19:29.956Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:39.060Z - error: Error en el servidor - 500 - Producto no encontrado - /api/products/6652fccb198bd853ddd7bc09 - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:39.493Z - error: Error en el servidor - 500 - Producto no encontrado - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:40.244Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:40.246Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:26:40.668Z - error: Error en el servidor - 500 - undefined - /api/products/6652fccb198bd853ddd7bc09 - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:41.076Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:41.475Z - error: Error en el servidor - 500 - undefined - /api/products/6652fccb198bd853ddd7bc09 - IP: ::ffff:127.0.0.1
+2024-05-26T09:26:41.876Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:27:32.950Z - error: Error en el servidor - 500 - Producto no encontrado - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:27:33.723Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:27:33.726Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:27:34.538Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:27:35.406Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:31:17.224Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:31:17.234Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:31:18.065Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:31:18.934Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:36:12.946Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:36:13.841Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:40:10.655Z - error: Error en el servidor - 500 - undefined - /api/products/6652fa000a9a8d315d25e59f - IP: ::ffff:127.0.0.1
+2024-05-26T09:40:11.085Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:41:08.158Z - error: Error en el servidor - 500 - undefined - /api/products/6652fa000a9a8d315d25e59f - IP: ::ffff:127.0.0.1
+2024-05-26T09:41:08.581Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:42:14.047Z - error: Error en el servidor - 500 - undefined - /api/products - IP: ::ffff:127.0.0.1
+2024-05-26T09:42:14.056Z - error: Error interno Campos requeridos faltantes: description: String, code: String, stock: Number, category: String
+2024-05-26T09:42:14.887Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:42:15.761Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:45:01.656Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:45:02.561Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1
+2024-05-26T09:50:07.017Z - error: Error en el servidor - 500 - undefined - /api/products/15c9ed04211074ca21a9764f - IP: ::ffff:127.0.0.1

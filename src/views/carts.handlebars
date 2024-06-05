@@ -1,0 +1,20 @@
+<h1 class="mt-4 mb-3 text-center">Carritos Actuales</h1>
+<hr>
+{{#if carts.length}}
+    {{#each carts}}
+        <div class="list-group mb-1 m-2">
+            <a href="/carts/{{this._id}}" class="cartList list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mt-2">Carrito ID: {{this._id}}</h5>
+                <button class="delete-cart-button btn btn-danger mt-2 mb-2" data-cart-id="{{this._id}}">
+                    <i class="bi bi-trash"></i>
+                </button>
+                </div>
+            </a>
+        </div>
+    {{/each}}
+{{else}}
+    <h5 class="text-center m-5">No hay carritos disponibles...</h5>
+{{/if}}
+<hr>
+<script src="/js/deleteCart.js"></script>

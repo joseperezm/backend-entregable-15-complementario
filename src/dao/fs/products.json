@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Portátil Ultradelgado",
+    "description": "Potente portátil ultradelgado para trabajo y entretenimiento.",
+    "code": "PU0501",
+    "price": 899.99,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Auriculares Inalámbricos",
+    "description": "Auriculares inalámbricos con cancelación de ruido.",
+    "code": "AI0502",
+    "price": 129.95,
+    "status": true,
+    "stock": 40,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Cámara DSLR Profesional",
+    "description": "Cámara DSLR para fotógrafos profesionales.",
+    "code": "CP0503",
+    "price": 1499.99,
+    "status": true,
+    "stock": 15,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Smart TV 4K",
+    "description": "Televisor inteligente con resolución 4K para una experiencia inmersiva.",
+    "code": "STV5004",
+    "price": 799.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Robot Aspirador Inteligente",
+    "description": "Robot aspirador inteligente para mantener tu hogar limpio.",
+    "code": "RAI5005",
+    "price": 349.5,
+    "status": true,
+    "stock": 20,
+    "category": "Hogar",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Teclado Mecánico para Gaming",
+    "description": "Teclado mecánico diseñado para gamers.",
+    "code": "TMG5006",
+    "price": 89.99,
+    "status": true,
+    "stock": 50,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Mochila para Portátil",
+    "description": "Mochila resistente y cómoda para transportar tu portátil.",
+    "code": "MP0507",
+    "price": 39.95,
+    "status": true,
+    "stock": 35,
+    "category": "Accesorios",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Impresora Multifunción",
+    "description": "Impresora multifunción para casa u oficina.",
+    "code": "IMF5008",
+    "price": 249.99,
+    "status": true,
+    "stock": 18,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+  {
+    "title": "Altavoz Bluetooth Portátil",
+    "description": "Altavoz Bluetooth portátil con alta calidad de sonido.",
+    "code": "ABP5009",
+    "price": 79.5,
+    "status": true,
+    "stock": 22,
+    "category": "Electrónicos",
+    "thumbnails": "uploads/placeholder.jpg"
+  },
+    {
+      "title": "Pulsera de Actividad Inteligente",
+      "description": "Pulsera de actividad con seguimiento de salud 24/7 y notificaciones inteligentes.",
+      "code": "PAI5010",
+      "price": 59.99,
+      "status": true,
+      "stock": 45,
+      "category": "Deportes",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Cafetera Programable",
+      "description": "Cafetera programable con control desde el smartphone.",
+      "code": "CP0511",
+      "price": 199.95,
+      "status": true,
+      "stock": 30,
+      "category": "Hogar",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Lámpara LED Inteligente",
+      "description": "Lámpara LED inteligente con control de color y brillo a través de app.",
+      "code": "LLI0512",
+      "price": 49.99,
+      "status": true,
+      "stock": 40,
+      "category": "Hogar",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Cargador Solar Portátil",
+      "description": "Cargador portátil solar para dispositivos móviles.",
+      "code": "CSP0513",
+      "price": 34.99,
+      "status": true,
+      "stock": 50,
+      "category": "Accesorios",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Dron con Cámara 4K",
+      "description": "Dron equipado con cámara 4K para fotografía y videografía aérea.",
+      "code": "DC4K0514",
+      "price": 999.99,
+      "status": true,
+      "stock": 10,
+      "category": "Electrónicos",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Sistema de Seguridad Doméstico Inteligente",
+      "description": "Sistema de seguridad con cámaras y sensores de movimiento inteligentes.",
+      "code": "SSDI0515",
+      "price": 499.99,
+      "status": true,
+      "stock": 20,
+      "category": "Hogar",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Tableta Gráfica Profesional",
+      "description": "Tableta gráfica para diseñadores y artistas digitales.",
+      "code": "TGP0516",
+      "price": 299.95,
+      "status": true,
+      "stock": 25,
+      "category": "Electrónicos",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Reloj Inteligente de Lujo",
+      "description": "Reloj inteligente con acabados de lujo y funcionalidades avanzadas.",
+      "code": "RIL0517",
+      "price": 459.99,
+      "status": true,
+      "stock": 15,
+      "category": "Accesorios",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Estación Meteorológica Doméstica",
+      "description": "Estación meteorológica inteligente con pronóstico del tiempo y monitoreo de calidad del aire.",
+      "code": "EMD0518",
+      "price": 159.99,
+      "status": true,
+      "stock": 30,
+      "category": "Hogar",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+    {
+      "title": "Kit de Iluminación LED RGB para Gaming",
+      "description": "Kit de iluminación LED RGB personalizable para mejorar la experiencia de juego.",
+      "code": "KILG0519",
+      "price": 89.99,
+      "status": true,
+      "stock": 40,
+      "category": "Electrónicos",
+      "thumbnails": "uploads/placeholder.jpg"
+    },
+      {
+        "title": "Bicicleta Eléctrica Plegable",
+        "description": "Bicicleta eléctrica plegable, ideal para desplazamientos urbanos y almacenamiento compacto.",
+        "code": "BEP0520",
+        "price": 1249.99,
+        "status": true,
+        "stock": 15,
+        "category": "Transporte",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Consola de Videojuegos Portátil",
+        "description": "Consola portátil con amplia biblioteca de juegos clásicos y modernos.",
+        "code": "CVP0521",
+        "price": 299.99,
+        "status": true,
+        "stock": 30,
+        "category": "Entretenimiento",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Mini Proyector Portátil",
+        "description": "Mini proyector portátil HD, perfecto para cine en casa y presentaciones.",
+        "code": "MPP0522",
+        "price": 249.99,
+        "status": true,
+        "stock": 20,
+        "category": "Electrónicos",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Juego de Herramientas Inteligentes",
+        "description": "Juego de herramientas con tecnología inteligente para medición y nivelación precisa.",
+        "code": "JHI0523",
+        "price": 129.99,
+        "status": true,
+        "stock": 25,
+        "category": "Herramientas",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Sistema de Riego Inteligente",
+        "description": "Sistema de riego automatizado y controlado por app para jardines y macetas.",
+        "code": "SRI0524",
+        "price": 199.99,
+        "status": true,
+        "stock": 20,
+        "category": "Jardinería",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Filtro de Agua Inteligente",
+        "description": "Filtro de agua con monitorización de calidad y purificación avanzada.",
+        "code": "FAI0525",
+        "price": 179.99,
+        "status": true,
+        "stock": 25,
+        "category": "Hogar",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Cámara de Seguridad 360°",
+        "description": "Cámara de seguridad con visión 360°, detección de movimiento y visión nocturna.",
+        "code": "CS360526",
+        "price": 159.99,
+        "status": true,
+        "stock": 20,
+        "category": "Seguridad",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Monitor de Calidad del Aire",
+        "description": "Dispositivo para monitorizar la calidad del aire interior con alertas en tiempo real.",
+        "code": "MCA0527",
+        "price": 99.99,
+        "status": true,
+        "stock": 30,
+        "category": "Hogar",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Pluma Estilográfica Inteligente",
+        "description": "Pluma estilográfica con digitalización instantánea de notas y dibujos.",
+        "code": "PEI0528",
+        "price": 109.99,
+        "status": true,
+        "stock": 40,
+        "category": "Oficina",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Altavoz Inteligente con Asistente de Voz",
+        "description": "Altavoz inteligente con calidad de sonido premium y asistente de voz integrado.",
+        "code": "AIAV0529",
+        "price": 199.99,
+        "status": true,
+        "stock": 35,
+        "category": "Electrónicos",
+        "thumbnails": "uploads/placeholder.jpg"
+      },
+      {
+        "title": "Teclado Virtual Láser",
+        "description": "Teclado láser proyectable en cualquier superficie plana, ligero y portátil.",
+        "code": "TVL0530",
+        "price": 99.99,
+        "status": true,
+        "stock": 50,
+        "category": "Accesorios",
+        "thumbnails": "uploads/placeholder.jpg"
+      }
+    ]    

@@ -1,0 +1,46 @@
+{{#if messages.success}}
+<div class="alert alert-success mx-5 text-center" role="alert" id="success-message">
+    {{messages.success}}
+</div>
+{{/if}}
+<h1 class="titulos mt-4">Productos Simulados</h1>
+
+<div class="contenedorCards custom-container">
+    {{#each products}}
+    <div class="card mb-3">
+        <img src="{{this.thumbnails}}" class="card-img-top" alt="{{this.title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text mt-2">Categoría: {{this.category}}</p>
+            <p class="card-text mt-2">Precio: ${{this.price}}</p>
+            <p class="card-text mt-2">Stock: <span class="{{#if this.stock}}text-success{{else}}text-danger{{/if}}">{{this.stock}}</span></p>
+        </div>
+    </div>
+    {{else}}
+    <p>No hay productos para mostrar.</p>
+    {{/each}}
+</div>
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    {{#if hasPrevPage}}
+    <li class="page-item">
+      <a class="page-link" href="?page={{prevPage}}{{#if sort}}&sort={{sort}}{{/if}}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    {{/if}}
+    {{#each pages}}
+    <li class="page-item {{#if this.isCurrent}}active{{/if}}">
+      <a class="page-link" href="?page={{this.number}}{{#if ../sort}}&sort={{../sort}}{{/if}}">{{this.number}}</a>
+    </li>
+    {{/each}}
+    {{#if hasNextPage}}
+    <li class="page-item">
+      <a class="page-link" href="?page={{nextPage}}{{#if sort}}&sort={{sort}}{{/if}}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+    {{/if}}
+  </ul>
+</nav>

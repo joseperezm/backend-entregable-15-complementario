@@ -1,0 +1,9 @@
+    <h1>Finalizar Compra</h1>
+    <p>Estás a punto de finalizar tu compra.</p>
+    {{#if error}}
+        <p>Error: {{error}}</p>
+    {{else}}
+        <form action="/carts/{{cartId}}/purchase" method="POST">
+            <button type="submit">Confirmar Compra</button>
+        </form>
+    {{/if}}

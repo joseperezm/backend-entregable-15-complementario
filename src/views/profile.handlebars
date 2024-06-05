@@ -1,0 +1,12 @@
+    <h1 class="mt-4 mb-3 text-center">Perfil de usuario</h1>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text"><strong>Nombre:</strong> {{user.first_name}} {{user.last_name}}</p>
+            <p class="card-text"><strong>Email:</strong> {{user.email}}</p>
+            <p class="card-text"><strong>Edad:</strong> {{user.age}}</p>
+            <p class="card-text"><strong>Rol:</strong> {{user.role}}</p>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="/api/sessions/logout" class="btn btn-danger">Cerrar Sesión</a>
+    </div>
