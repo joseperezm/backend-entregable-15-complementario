@@ -160,7 +160,7 @@ exports.login = (req, res, next) => {
         return res.redirect('/products');
     }    
 
-    passport.authenticate('login', (err, user, info) => {
+    passport.authenticate('login', async (err, user, info) => {
         if (err) {
             logger.error('Error al iniciar sesión:', err);
             req.flash('error', 'Error al iniciar sesión...');
@@ -171,12 +171,14 @@ exports.login = (req, res, next) => {
             req.flash('error', 'Usuario o contraseña incorrectos...');
             return res.redirect('/login'); 
         }
-        req.logIn(user, (err) => {
+        req.logIn(user, async (err) => {
             if (err) {
                 logger.error('Error al iniciar sesión:', err);
                 req.flash('error', 'Error al iniciar sesión...');
                 return next(err);
             }
+            user.last_connection = new Date();
+            await user.save();
             req.session.user = {
                 id: user._id,
                 first_name: user.first_name,
@@ -193,8 +195,16 @@ exports.login = (req, res, next) => {
     })(req, res, next);
 };
 
-exports.logout = (req, res) => {
+exports.logout = async (req, res) => {
     const userName = req.user ? `${req.user.first_name} ${req.user.last_name}` : 'Desconocido';
+
+    if (req.user) {
+        const user = await UserModel.findById(req.user._id);
+        if (user) {
+            user.last_connection = new Date();
+            await user.save();
+        }
+    }
 
     req.logout(function(err) {
         if (err) {
